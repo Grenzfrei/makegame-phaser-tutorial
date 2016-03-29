@@ -8,15 +8,15 @@
 
 ## Main Concept
 
-„As an air pirate, you stand against an evil empire which conquered many cities of your world. Explore the world with your airship, recruit your crew and free the occupied cities.“
+> „As an air pirate, you stand against an evil empire which conquered many cities of your world. Explore the world with your airship, recruit your crew and free the occupied cities.“
 
 ## Documentation
 
 You can find the guide to this tutorial (in german language) at [www.makegame.de](https://www.makegame.de)
 
 The Game Documentation Documents are kept up to date on Google Drive:
--[Concept Doc](https://docs.google.com/document/d/1_PpSi6nR4Zx3cAufoivnuiElztnHAQEZtPwXzmjd2BQ/edit?usp=sharing) 
--definition of the [Minimum Viable Product](https://docs.google.com/document/d/1OQuNSksEtqnoXKd-my_OrMZfj2vXWENd8vsxonogiF8/edit?usp=sharing) 
+  - [Concept Doc](https://docs.google.com/document/d/1_PpSi6nR4Zx3cAufoivnuiElztnHAQEZtPwXzmjd2BQ/edit?usp=sharing) 
+  - definition of the [Minimum Viable Product](https://docs.google.com/document/d/1OQuNSksEtqnoXKd-my_OrMZfj2vXWENd8vsxonogiF8/edit?usp=sharing) 
 
 
 
