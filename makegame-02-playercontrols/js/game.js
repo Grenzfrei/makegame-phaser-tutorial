@@ -22,7 +22,7 @@ var ship,
 function create () {
   
    // add the background map
-   game.add.sprite(-50, -50, 'map');
+   game.add.sprite(0, 0, 'map');
 
   // enable the Arcade Physics system
   game.physics.startSystem(Phaser.Physics.ARCADE);
