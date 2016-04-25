@@ -1,0 +1,67 @@
+[
+    {
+        "position": {"x": 115, "y": 435}, 
+        "troops": 1, 
+        "level": 1, 
+        "classes": ["sword"],
+        "character": "Defender" 
+    },
+    {
+        "position": {"x": 322, "y": 82 }, 
+        "troops": 2, 
+        "level": 1,
+        "classes": ["sword", "shield"]
+    },
+    {
+        "position": {"x": 730, "y": 223}, 
+        "troops": 3, 
+        "level": 1, 
+        "classes": ["sword", "shield"],
+        "character": "Gunman"
+    },
+    {
+        "position": {"x": 722, "y": 550}, 
+        "troops": 3, 
+        "level": 2,
+        "classes": ["sword", "shield"]
+    },
+    {
+        "position": {"x": 590, "y": 267}, 
+        "troops": 3, 
+        "level": 2, 
+        "classes": ["sword", "shield"],
+        "character": "Fighter" 
+    },
+    {
+        "position": {"x": 600, "y": 420}, 
+        "troops": 4, 
+        "level": 2,
+        "classes": ["sword", "shield", "gun"]
+    },
+    {
+        "position": {"x": 654, "y": 97 }, 
+        "troops": 4, 
+        "level": 3, 
+        "classes": ["sword", "shield", "gun"],
+        "character": "Defender2" 
+    },
+    {
+        "position": {"x": 415, "y": 270}, 
+        "troops": 5, 
+        "level": 3,
+        "classes": ["sword", "shield", "gun"]
+    },
+    {
+        "position": {"x": 235, "y": 460}, 
+        "troops": 5, 
+        "level": 4, 
+        "classes": ["sword", "shield", "gun"],
+        "character": "Gunman 2" 
+    },
+    {
+        "position": {"x": 250, "y": 275}, 
+        "troops": 6, 
+        "classes": ["sword", "shield", "gun"],
+        "level": 4
+    }
+]

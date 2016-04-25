@@ -1,0 +1,26 @@
+{
+  "sword": {
+    "description": "'SWORD' units are effective against 'GUN' class units \n",
+    "damage_mod": {
+      "sword": "1",
+      "shield": "1",
+      "gun": "1"
+    }
+  },
+  "shield": {
+    "description": "'SHIELD' units receive less damage from every unit,\n but more damage from 'GUN'  units \n",
+    "damage_mod": {
+      "sword": "0.5",
+      "shield": "0.5",
+      "gun": "1.5"
+    }
+  },
+ "gun": {
+    "description": "'GUN' class units are effective against 'SHIELD' units, \n  but receive more damage from 'SWORD' units \n",
+    "damage_mod": {
+      "sword": "1.5",
+      "shield": "1",
+      "gun": "1"
+    }
+  }
+}
