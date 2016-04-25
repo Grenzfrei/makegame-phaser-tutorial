@@ -14,14 +14,18 @@ Airship.BattleState.ActionMessage = function (game_state, message_text, wait_tim
     
     // get the game state from the constructor
     this.game_state = game_state;
-
+    
     // create message text
-    this.game_state.message = this.game_state.add.text(400, 32, message_text, this.game_state._fontStyle);
-    this.game_state.message.anchor.setTo(0.5);
-
+    Phaser.Text.call(this, game_state.game, 400, 32, message_text, this.game_state._fontStyle);
+    this.anchor.setTo(0.5);
+    
+    // add message text to state
+    this.game_state.message = this;
+    this.game_state.game.add.existing(this.game_state.message);
+    
     // start timer to destroy the message
     this.kill_timer = this.game_state.game.time.create();
-    this.kill_timer.add(Phaser.Timer.SECOND * wait_time, this.kill, this);
+    this.kill_timer.add(Phaser.Timer.SECOND * wait_time, this.killMessage, this);
     this.kill_timer.start();
 };
 
@@ -33,7 +37,7 @@ Airship.BattleState.ActionMessage.prototype.constructor = Airship.BattleState.Ac
  * Called when timer is killed
  * @callback
  */  
-Airship.BattleState.ActionMessage.prototype.kill = function () {
+Airship.BattleState.ActionMessage.prototype.killMessage = function () {
     // when the message is destroyed, call next turn
     this.game_state.message.kill();
     this.game_state.nextTurn();

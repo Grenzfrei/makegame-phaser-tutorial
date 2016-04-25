@@ -9,14 +9,14 @@ var Airship = Airship || {},
  * @param {Object} game_state - The current game state object
  * @param {number} x - x position for the enemy unit
  */  
-Airship.BattleState.Enemy = function (game_state, x) {
+Airship.BattleState.Enemy = function (game_state, character_index) {
 
     // name of enemy unit
     this.name = "soldier";
 
     // starting position of enemy unit
     this.startPosition = {
-      x: x + 200,
+      x: character_index * 100 + 200,
       y: 150
     }
 

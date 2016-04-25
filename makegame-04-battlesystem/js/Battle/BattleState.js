@@ -29,8 +29,6 @@ Airship.BattleState.prototype.constructor = Airship.BattleState;
  */
 Airship.BattleState.prototype.init = function (city, character_data) {
     
-    console.log(city, character_data);
-
     // save number of troops in the city in current state
     this.troops = city.troops;
     // save collection of characters data in current state
@@ -47,14 +45,16 @@ Airship.BattleState.prototype.create = function () {
 
     // create groups
     this.groups = {};
+    
     // add a group for the enemies
     this.groups.enemies = this.add.group();
+    
     // add a group for the characters
     this.groups.characters = this.add.group();
 
     // add a new enemy object from enemy prefab for each number of troops
     for (var i = 0; i < this.troops; i++) {
-        this.groups.enemies.add(new Airship.BattleState.Enemy(this, i*100))
+        this.groups.enemies.add(new Airship.BattleState.Enemy(this, i))
     }
 
     // add a new Character Object from Character prefab for each character in character_data
@@ -95,7 +95,7 @@ Airship.BattleState.prototype.render = function () {
  */
 Airship.BattleState.prototype.nextTurn = function () {
   
-    // first unit takes the next unit
+    // first unit takes the next turn
     this.current_unit = this.units.shift();
     // if the unit is alive, it acts, otherwise goes to the next turn
     if (this.current_unit.alive) {

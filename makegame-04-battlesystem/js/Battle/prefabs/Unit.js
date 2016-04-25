@@ -15,7 +15,7 @@ Airship.BattleState.Unit = function (game_state, position, spritesheet, frame) {
     
     this.game_state = game_state;
     
-    // create new Sprite Object
+    // create new Sprite Object (context, game object, x, y, key, frame)
     Phaser.Sprite.call(this, game_state.game, position.x, position.y, spritesheet, frame);
     this.anchor.setTo(0.5);
 };

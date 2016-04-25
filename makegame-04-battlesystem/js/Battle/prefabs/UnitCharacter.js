@@ -72,5 +72,3 @@ Airship.BattleState.Character.prototype.showStats = function () {
     // show stats of the character on the stage
     this.status_text = this.game_state.add.text(this.startPosition.x-32, this.startPosition.y+40, status_text, this.game_state._unitFontStyle);
 };
-
-

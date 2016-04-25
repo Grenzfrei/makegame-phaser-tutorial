@@ -100,7 +100,7 @@ Airship.WorldState.prototype.update = function () {
 Airship.WorldState.prototype.visitCity = function (ship, city) {
 
     // ddebug message with name (key) of collided sprite
-    this.game.debug.text('Truppen: ' + city.troops, city.x -40, city.y - 10);
+    this.game.debug.text('Troops: ' + city.troops, city.x -40, city.y - 10);
     
     // go to battle when user presses enter
     if (this.game.input.keyboard.isDown(Phaser.Keyboard.ENTER)) {
